@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@300 & family= Sigmar & display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.header {
+  background-color: rgb(39, 41, 168);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 5px 10px;
+}
+
+.header .logo {
+  cursor: pointer;
+}
+
+.header .logo img {
+  height: 120px;
+  width: auto;
+}
+
+.header .logo .img:hover {
+  transform: scale(1.2);
+}
+
+header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-weight: 500;
+  font-size: 700;
+  color: rgb(0, 0, 0);
+  padding: 5px 25px;
+  background: rgb(255, 38, 0);
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.header .btn button {
+  font-weight: 700;
+  color: rgb(103, 192, 221);
+  padding: 9px 25px;
+  background: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+  background-color: rgb(0, 255, 106);
+  color: aliceblue;
+  transform: scale(1.1);
+}
+
+div h2 {
+  padding: 60px 90px 60px 90px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.titulos {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(39, 41, 168);
+  margin: 0px;
+  padding: 15px;
+}
+
+.galeria {
+  width: 100%;
+  background-color: rgb(39, 41, 168);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-areas: "img1 img2 img2 img4" "img1 img3 img3 img3" "img5 img5 img5 img6" "img7 img8 img8 img8";
+  padding: 0px 30px;
+  grid-gap: 7px;
+}
+
+.img {
+  border: 3px solid black;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.img1 {
+  background-image: url(./multimedia/1cmion.jpg);
+  grid-area: img1;
+}
+
+.img2 {
+  background-image: url(./multimedia/2vertical.jpg);
+  grid-area: img2;
+}
+
+.img3 {
+  background-image: url(./multimedia/3horizontal.jpg);
+  grid-area: img3;
+}
+
+.img4 {
+  background-image: url(./multimedia/camion2horizontal.webp);
+  grid-area: img4;
+}
+
+.img5 {
+  background-image: url(./multimedia/camionrojo.jpg);
+  grid-area: img5;
+}
+
+.img6 {
+  background-image: url(./multimedia/camion\ azul.jpg);
+  grid-area: img6;
+}
+
+.img7 {
+  background-image: url(./multimedia/negro.jpg);
+  grid-area: img7;
+}
+
+.img8 {
+  background-image: url(./multimedia/amarillo.jpg);
+  grid-area: img8;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  border-radius: 50px;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.redes a {
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+
+.redes a:hover {
+  color: blue;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: rgb(39, 41, 168);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.card {
+  min-height: 350px;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  cursor: default;
+  transition: all 400ms ease;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card a {
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  border: 1px solid red;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.card a:hover {
+  background-color: red;
+  color: white;
+}
+
+.card-img {
+  height: 175px;
+  width: 100%;
+  background-color: orange;
+  background-image: url(./multimedia/blancho.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  text-align: center;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 5px black;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  padding: 10px;
+}
+
+.sec {
+  text-align: center;
+  background-color: red;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+section.cont {
+  height: 600px;
+  width: 500px;
+  background-color: white;
+}
+
+/*# sourceMappingURL=estilos.cssna.map */

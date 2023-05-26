@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@300 & family= Sigmar & display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    background-color: rgb(39, 41, 168);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 10px;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 120px;
+    width: auto;
+}
+
+.header .logo .img:hover {
+    transform: scale(1.2);
+}
+
+header .nav-links {
+    list-style: none;
+
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-weight: 500;
+    font-size: 700;
+    color: rgb(255, 255, 255);
+    padding: 5px 25px;
+    background: rgb(255, 38, 0);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.header .btn button {
+    font-weight: 700;
+    color: rgb(103, 192, 221);
+    padding: 9px 25px;
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: rgb(0, 255, 106);
+    color: aliceblue;
+    transform: scale(1.1);
+}
+
+div h2 {
+    text-align: justify;
+    padding: 60px 90px 60px 90px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.titulos {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 15px;
+}
+
+.galeria {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas:
+        "img1 img1 img1 img1"
+        "img1 img1 img1 img1"
+        "img1 img1 img1 img1"
+        "img1 img1 img1 img1"
+        "img4 img4 img5 img5"
+        "img4 img4 img5 img5"
+        "img2 img2 img2 img2"
+        "img2 img2 img2 img2"
+        "img2 img2 img2 img2"
+        "img2 img2 img2 img2"
+        "img7 img7 img3 img3"
+        "img7 img7 img3 img3"
+        "img7 img7 img6 img6"
+        "img7 img7 img6 img6"
+        "img8 img8 img8 img8"
+        "img8 img8 img8 img8"
+        "img8 img8 img8 img8";
+    padding: 0px 30px;
+    grid-gap: 7px;
+
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.img1 {
+    background-image: url(./multimedia/galeria1.jpg);
+    grid-area: img1;
+}
+
+.img2 {
+    background-image: url(./multimedia/glaeria2.jpg);
+    grid-area: img2;
+}
+
+.img3 {
+    background-image: url(./multimedia/galeria3.jpeg);
+    grid-area: img3;
+}
+
+.img4 {
+    background-image: url(./multimedia/galeria4.jpg);
+    grid-area: img4;
+}
+
+.img5 {
+    background-image: url(./multimedia/glaeria5.jpg);
+    grid-area: img5;
+}
+
+.img6 {
+    background-image: url(./multimedia/galeria6.jpg);
+    grid-area: img6;
+
+}
+
+.img7 {
+    background-image: url(./multimedia/glaeria7.jpg);
+    grid-area: img7;
+
+}
+
+.img8 {
+    background-image: url(./multimedia/galeria8.jpg);
+    grid-area: img8;
+}
+
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 50px;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.redes a {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+.redes a:hover {
+    color: blue;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.card {
+    min-height: 470px;
+    width: 30%;
+    background-color: rgb(102, 19, 19);
+    box-shadow: 0px 1px 10px rgba(211, 107, 107, 0.4);
+    border-radius: 6px;
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(211, 107, 107, 0.6);
+    transform: translateY(-3%);
+}
+
+.card a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card a:hover {
+    background-color: red;
+    color: white;
+}
+
+article img {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(38, 0, 255);
+    background-image: url(./multimedia/blancho.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.card h3 {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 5px black;
+    text-transform: uppercase;
+}
+
+.card h4 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sec {
+    text-align: center;
+    background-color: red;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+
+.articulos {
+    text-align: justify;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 60px 90px 60px 90px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.articulos img {
+    margin-right: 15px;
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    float: left;
+}
+
+.mapa {
+    text-align: justify;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 60px 90px 60px 90px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mapa iframe {
+    margin-right: 15px;
+    border-radius: 12px;
+    float: left;
+}
+
+.mapa2 {
+    text-align: justify;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 60px 90px 60px 90px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mapa2 iframe {
+    margin-left: 15px;
+    border-radius: 12px;
+    float: right;
+}
+
+.formulario-cnt {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-cnt h1 {
+    text-align: center;
+}
+
+.forma-grupo {
+    margin-bottom: 20px;
+}
+
+.forma-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.forma-grupo input,
+.forma-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.forma-grupo textarea {
+    height: 100px;
+}
+
+.forma-grupo input[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.forma-grupo input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media(max-width: 755px) {
+    .header {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .header .nav-links li {
+        padding: 0px 5px;
+        margin: 0 20px;
+    }
+
+    .header .btn button {
+        margin: 0px;
+        padding: 20;
+    }
+
+    .header .nav-links a {
+        padding: 10px 40px;
+    }
+
+    .header .logo img {
+        height: 190px;
+        width: auto;
+    }
+
+    .card {
+        min-height: 600px;
+    }
+
+    div h2 {
+        padding: 40px 50px;
+        text-align: start;
+    }
+
+    .galeria {
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-areas:
+            "img1 img1 img1 img1"
+            "img1 img1 img1 img1"
+            "img4 img4 img5 img5"
+            "img2 img2 img2 img2"
+            "img2 img2 img2 img2"
+            "img7 img7 img3 img3"
+            "img7 img7 img6 img6"
+            "img8 img8 img8 img8"
+            "img8 img8 img8 img8";
+    }
+}
+
+@media(max-width: 717px) {
+    .mapa2 {
+        padding: 60px 30px 60px 30px;
+    }
+
+    .mapa {
+        padding: 60px 30px 60px 30px;
+    }
+}
+
+
+@media(max-width: 620px) {
+    .header .nav-links a {
+        padding: 10px 20px;
+    }
+
+    .card {
+        min-height: 640px;
+    }
+
+    .galeria {
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-areas:
+            "img1 img1 img1 img1"
+            "img1 img1 img1 img1"
+            "img2 img2 img2 img2"
+            "img2 img2 img2 img2"
+            "img3 img3 img3 img3"
+            "img3 img3 img3 img3"
+            "img4 img4 img4 img4"
+            "img4 img4 img4 img4"
+            "img5 img5 img5 img5"
+            "img5 img5 img5 img5"
+            "img6 img6 img6 img6"
+            "img6 img6 img6 img6"
+            "img7 img7 img7 img7"
+            "img7 img7 img7 img7"
+            "img8 img8 img8 img8"
+            "img8 img8 img8 img8";
+    }
+
+    .mapa2 {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .mapa {
+        padding: 30px 30px 30px 30px;
+    }
+}
+
+
+@media(max-width: 603px) {
+    section {
+        flex-direction: column;
+    }
+
+    .card {
+        min-height: 500px;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 556px) {
+    section {
+        flex-direction: column;
+    }
+
+    .header .nav-links a {
+        padding: 7px 10px;
+
+    }
+
+    .card {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .mapa2 {
+        padding: 50px 50px;
+    }
+
+    .mapa {
+        padding: 50px 50px;
+    }
+}
+
+@media(max-width: 473px) {
+    .header .nav-links a {
+        padding: 5px 10px;
+        border-radius: 12px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .card {
+        min-height: 900;
+        margin-top: 20px;
+    }
+
+    .card p {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        line-height: 40px;
+    }
+
+    .card h3 {
+        text-align: center;
+        color: rgb(255, 0, 0);
+        margin: 15px;
+    }
+
+    .articulos {
+        padding: 20px 40px 20px 40px;
+    }
+
+    .mapa iframe {
+        width: 300px;
+        margin-left: 40px;
+    }
+
+    .mapa2 iframe {
+        width: 300px;
+        margin-right: 30px;
+    }
+}
+
+@media(max-width: 453px) {
+    .header .nav-links li {
+        margin: 0 8px;
+    }
+
+    .card {
+        min-height: 650px;
+    }
+
+    .galeria {
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-areas:
+            "img1 img1 img1 img1"
+            "img2 img2 img2 img2"
+            "img3 img3 img3 img3"
+            "img4 img4 img4 img4"
+            "img5 img5 img5 img5"
+            "img6 img6 img6 img6"
+            "img7 img7 img7 img7"
+            "img8 img8 img8 img8";
+    }
+
+    .mapa iframe {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .mapa2 iframe {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .mapa2 {
+        padding: 10px 10px;
+    }
+
+    .mapa {
+        padding: 10px 10px;
+    }
+}
+
+
+
+@media(max-width: 413px) {
+    .header .nav-links li {
+        padding: 0px 5px;
+        margin: 0 10px;
+    }
+
+    .header .btn button {
+        padding: 6px 15px;
+    }
+
+    .card {
+        min-height: 800px;
+    }
+}
